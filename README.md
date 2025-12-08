@@ -18,8 +18,8 @@ RUNNING THE ANALYSIS:
   * a .FASTA file containing reference sequences
   * a .sh BASH script
   * and a .py Python script
-3) Open Visual Studio Code and open the folder ("Code and Raw Sequences"). Ensure you are in the correct directory, you should be able to see the contents listed above.
-4) Run the BASH script using './BASH_concatenator_script.sh', this combine the sample .FASTQ files into single sequences for each of the samples, and output them together as a new file called 'all_sample_sequences'.
+3) Open Visual Studio Code and open the folder ("Code and Raw Sequences"). Please ensure you are in the correct directory (folder), you should be able to see the contents listed above.
+4) Run the BASH script by typing './BASH_concatenator_script.sh' into the terminal, this combine the sample .FASTQ files into single sequences for each of the samples, and output them together as a new file called 'all_sample_sequences'.
 5) Next run the Python script using './Python_Translation_Script.py', this will combine the sample sequences with the reference sequence in a new file ('allseq.FASTA'), translate the longest coding sequences and output them as a new file called 'translated_sequences.FASTA'.
 6) Open your browser and go to the following link https://www.ebi.ac.uk/jdispatcher/msa/muscle5. This is MUSCLE 5, a multiple sequence alignner. Upload 'translated_sequences.FASTA' and submit.
 7) Download the alignment and .tree file.
