@@ -9,7 +9,7 @@ This repository contains the following folders and files:
   * Processed Sequences, Alingment and Tree (folder) = contains two FASTA files (all sequences used in the analysis, and their translation), along with the alignment and phylotree files.
   * Supplementary Tables 1 and 2 (.xlsx file)
 
-IMPORTANT NOTE: To conduct this analysis you are required to have Visual Studio Code installed on your computer, with both Python and BioPython modules installed.
+IMPORTANT NOTE: To conduct this analysis you are required to have Visual Studio Code installed on your computer, with both Python and BioPython extensions installed.
 
 RUNNING THE ANALYSIS:
 
