@@ -10,7 +10,7 @@ checker=0
 rm -f "$finaloutput"
 
 # First we will add an ID for Sample A to the output file
-echo ">Sample_A" >> "$finaloutput"
+echo ">[organism=Sample_A]" >> "$finaloutput"
            
 # Now we shall count, clean and concatenate the files for Sample A:
 # Start a for loop.
@@ -31,7 +31,7 @@ done
 # Add a newline in the output for the next sample, and add next sample ID.
 echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
-echo ">Sample_B" >> "$finaloutput"
+echo ">[organism=Sample_B]" >> "$finaloutput"
 
 # Repeat steps (done for Sample A) for Sample B:
 for file in ./raw_sequences/sampleB_part*.FASTQ; do
@@ -46,7 +46,7 @@ done
 
 echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
-echo ">Sample_C" >> "$finaloutput"
+echo ">[organism=Sample_C]" >> "$finaloutput"
 
 # Repeat steps (done for Sample A) for Sample C:
 for file in ./raw_sequences/sampleC_part*.FASTQ; do
@@ -61,7 +61,7 @@ done
 
 echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
-echo ">Sample_D" >> "$finaloutput"
+echo ">[organism=Sample_D]" >> "$finaloutput"
 
 # Repeat steps (done for Sample A) for Sample D:
 for file in ./raw_sequences/sampleD_part*.FASTQ; do
