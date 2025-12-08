@@ -33,7 +33,7 @@ echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
 echo ">Sample_B" >> "$finaloutput"
 
-#Repeat steps (done for Sample A) for Sample B:
+# Repeat steps (done for Sample A) for Sample B:
 for file in ./raw_sequences/sampleB_part*.FASTQ; do
 
 if [ -e "$file" ]; then
@@ -48,7 +48,7 @@ echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
 echo ">Sample_C" >> "$finaloutput"
 
-#Repeat steps (done for Sample A) for Sample C:
+# Repeat steps (done for Sample A) for Sample C:
 for file in ./raw_sequences/sampleC_part*.FASTQ; do
 
 if [ -e "$file" ]; then
@@ -63,7 +63,7 @@ echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
 echo ">Sample_D" >> "$finaloutput"
 
-#Repeat steps (done for Sample A) for Sample D:
+# Repeat steps (done for Sample A) for Sample D:
 for file in ./raw_sequences/sampleD_part*.FASTQ; do
 if [ -e "$file" ]; then
 	checker=$((checker + 1))
@@ -72,6 +72,10 @@ fi
 	org=$(grep -v '^@' "$file" | sed '/^[IH#123456789].*/d' | sed '/+/d' | tr -d ' ')
 	echo "$org" | tr -d '\n' >> "$finaloutput"
 done
+
+# Add two newlines to make room for reference sequences when they are concatenated.
+echo "" >> "$finaloutput"
+echo "" >> "$finaloutput"
 
 #Check how many or if all sample files were present and included in output
 if [ $checker -eq 0 ]; then
