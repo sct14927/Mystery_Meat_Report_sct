@@ -30,6 +30,7 @@ done
 
 # Add a newline in the output for the next sample, and add next sample ID.
 echo "" >> "$finaloutput"
+echo "" >> "$finaloutput"
 echo ">Sample_B" >> "$finaloutput"
 
 #Repeat steps (done for Sample A) for Sample B:
@@ -44,6 +45,7 @@ fi
 done
 
 echo "" >> "$finaloutput"
+echo "" >> "$finaloutput"
 echo ">Sample_C" >> "$finaloutput"
 
 #Repeat steps (done for Sample A) for Sample C:
@@ -57,6 +59,7 @@ fi
 	echo "$org" | tr -d '\n' >> "$finaloutput"
 done
 
+echo "" >> "$finaloutput"
 echo "" >> "$finaloutput"
 echo ">Sample_D" >> "$finaloutput"
 
